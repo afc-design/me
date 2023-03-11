@@ -88,21 +88,21 @@ body{
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #c32865;
+  background: #8661c1;
 }
 
 ::selection{
-  background-color:#c32865;
+  background-color:#8661c1;
   color:#fff;
 }
 
 -webkit-::selection{
-    background-color:#c32865;
+    background-color:#8661c1;
     color:#fff;
 }
 
 ::-moz-selection{
-    background-color:#c32865;
+    background-color:#8661c1;
     color:#fff;
 }
 
@@ -114,7 +114,7 @@ body{
 
 h1,
 .h1{ 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 3.428rem;
   line-height: 1.2;
@@ -126,7 +126,7 @@ h1,
 
 h2,
 .h2{ 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 3.371rem;
   line-height: 1.166;
@@ -137,7 +137,7 @@ h2,
 
 h3,
 .h3{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 2.142rem;
   line-height: 1.2;
@@ -148,7 +148,7 @@ h3,
 
 h4,
 .h4{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 1.714rem;
   line-height: 1.25;
@@ -159,7 +159,7 @@ h4,
 
 h5,
 .h5{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 1.571rem;
   line-height: 1.1;
@@ -170,7 +170,7 @@ h5,
 
 h6,
 .h6{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 1.285rem;
   line-height: 1.3333;
@@ -226,7 +226,7 @@ blockquote{
   padding: 0;
   width: 80%;
   padding-left: 6.8rem;
-  border-left: 0.3rem solid #c32865;
+  border-left: 0.3rem solid #8661c1;
   margin-top: 5rem;
   color:#fff;
 }
@@ -240,14 +240,14 @@ cite{
 }
 
 a {
-  color:#c32865;
+  color:#8661c1;
   -webkit-transition: color .3s ease-out;
        -o-transition: color .3s ease-out;
           transition: color .3s ease-out;
 }
 
 a:hover {
-  color:#c32865;
+  color:#8661c1;
   outline: none;
 }
 
@@ -303,7 +303,7 @@ input[type='email']:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 textarea:focus{
-  border-color: #c32865;
+  border-color: #8661c1;
   outline: 0;
   color: #fff;
 }
@@ -358,7 +358,7 @@ label.error{
   border:0;
   border-radius: 0;
   padding: 1.1em 2.28em 1em;
-  background-color: #c32865;
+  background-color: #8661c1;
   text-decoration: none;
   -webkit-transition: all .3s ease-out!important;
           transition: all .3s ease-out!important;
@@ -400,8 +400,8 @@ label.error{
 }
 
 .ion-ios-play:hover{
-  color: #c32865;
-  border: 1px solid #c32865;
+  color: #8661c1;
+  border: 1px solid #8661c1;
 }
 
 .ion-ios-play:after {
@@ -460,7 +460,7 @@ label.error{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #c32865;
+  background-color: #8661c1;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -506,7 +506,7 @@ label.error{
 }
 
 .text-primary{
-  color:#c32865!important;
+  color:#8661c1!important;
 }
 
 .masked{
@@ -604,9 +604,11 @@ a.brand:focus{
 }
 
 .brand img{
+  width: 31px;
   display: inline-block;
   vertical-align:middle;
   margin-right: 0.65rem;
+  /* transform: scale(0.7); */
 }
 
 .brand-info{
@@ -615,7 +617,8 @@ a.brand:focus{
 }
 
 .brand-name{
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
   font-size: 1.714rem;
   line-height: 1;
 }
@@ -657,7 +660,7 @@ a.brand:focus{
 }
 
 .navbar-toggle:hover .icon-bar{
-  background-color:  #c32865;
+  background-color:  #8661c1;
 }
 
 .navbar .social-list{
@@ -692,7 +695,7 @@ a.brand:focus{
 }
 
 .social-list a:hover{
-  color:#c32865;
+  color:#8661c1;
   text-decoration: none;
 }
 
@@ -793,7 +796,7 @@ a.brand:focus{
 }
 
 .close-menu:hover{
-  color: #c32865;
+  color: #8661c1;
 }
 
 .menu-list{
@@ -888,7 +891,7 @@ a.brand:focus{
 }
 
 .menu-footer .social-list a:hover{
-  color:#c32865;
+  color:#8661c1;
 }
 
 .menu-footer .copy{
@@ -1034,7 +1037,7 @@ a.brand:focus{
 #pp-nav .pp-nav-down:hover,
 #pp-nav.white .pp-nav-up:hover,
 #pp-nav.white .pp-nav-down:hover{
-  color: #c32865;
+  color: #8661c1;
 }
 
 #pp-nav.white .pp-nav-up,
@@ -1053,7 +1056,7 @@ a.brand:focus{
 
 #pp-nav li .active span, .pp-slidesNav .active span{
   opacity: 1;
-  background: #c32865;
+  background: #8661c1;
   transform:scale(1.6);
 }
 
@@ -1241,7 +1244,7 @@ a.brand:focus{
 }
 
 .display-2{
-  font-size: 6.54rem;
+  font-size: 4.7rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.05em;
@@ -1267,7 +1270,7 @@ a.brand:focus{
 
 .icon-specialization{
   font-size:5rem;
-  color:#c32865;
+  color:#8661c1;
 }
 
 .row-specialization{
@@ -1324,11 +1327,11 @@ a.brand:focus{
 }
 
 .col-resume:hover{
-  background: #c32865;
+  background: #8661c1;
 }
 
 .resume-type{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 500;
@@ -1390,7 +1393,7 @@ a.brand:focus{
 }
 
 .experience-number{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size:23.142rem;
   line-height: 1;
   font-weight:400;
@@ -1466,7 +1469,7 @@ a.brand:focus{
 }
 
 .progress-bar{
-  background-color:#c32865;
+  background-color:#8661c1;
   height: 100%;
 }
 
@@ -1610,7 +1613,7 @@ a.brand:focus{
 .view-all{
   position: relative;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size:1.26rem;
   margin-top:2.3rem;
 }
@@ -1633,7 +1636,7 @@ a.brand:focus{
 
 
 .view-all a:hover{
-  color:#c32865;
+  color:#8661c1;
   text-decoration: none;
 }
 
@@ -1805,7 +1808,7 @@ a.brand:focus{
 }
 
 .author-name{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
   line-height: 1.333;
@@ -1881,7 +1884,7 @@ a.brand:focus{
 }
 
 .owl-dot.active span{
-  background: #c32865;
+  background: #8661c1;
   transform:scale(1.4);
 }
 

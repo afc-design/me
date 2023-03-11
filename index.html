@@ -12,12 +12,13 @@
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 
-<title>Ramsay - One page HTML Template</title> 
+<title>Andrea Feliz - Portfolio</title> 
 
 <!-- Styles -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:500,600,700,800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/typed.css" rel="stylesheet" media="screen">
 </head>
 <body>
   <div class="animsition">   
@@ -62,7 +63,7 @@
           <a href="" class="icon ion-social-linkedin"></a>
           <a href="" class="icon ion-social-dribbble-outline"></a>
         </div>
-        <div class="copy">© Ramsay 2019. All Rights Reseverd</div>
+        <div class="copy">© Andrea Feliz 2023. All Rights Reseverd</div>
       </div>
     </div>
 
@@ -71,7 +72,7 @@
     <header class="navbar navbar-fullpage boxed">
       <div class="navbar-bg"></div>
       <a class="brand" href="#">
-        <img alt="" src="images/brand.png">
+        <img alt="" src="images/brand.svg">
         <div class="brand-info">
           <div class="brand-name">Andrea Feliz</div>
         </div>
@@ -85,17 +86,17 @@
       
       <div class="contacts d-none d-md-block">
         <div class="contact-item">
-          +96 56-85-1379
+          +34 669 01 02 55
         </div>
         <div class="contact-item spacer">
           /
         </div>
         <div class="contact-item">
-          <a href="mailto:contact@Ramsay.com">contact@Ramsay.com</a>
+          <a href="mailto:contact@Ramsay.com">andorea.contact@gmail.com</a>
         </div>
       </div>
     </header>
-    <div class="copy-bottom white boxed">© Ramsay 2019.</div>
+    <div class="copy-bottom white boxed">© Andrea Feliz 2023.</div>
     <div class="social-list social-list-bottom boxed">
         <a href="" class="icon ion-social-twitter"></a>
         <a href="" class="icon ion-social-facebook"></a>
@@ -115,7 +116,16 @@
                     <div class="intro">
                       <div class="row">
                         <div class="col-md-8 col-lg-6">
-                          <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span class="text-primary">Howdy,</span> I'm Ramsay</h1>
+                          <h1 class="display-2 text-white wow fadeIn" data-wow-delay="0.1s">
+                            <span id="greeting-0" class="text-primary"></span> Andrea<span class="text-primary">, <span id="greeting-1"></span></span></h1>
+                          <div class="h1_big">
+                            <div class="display-2 wow fadeIn typed-strings" data-wow-delay="0.1s">
+                              <p id="designer"></p>
+                              <p id="communicator"></p>
+                              <p id="photographer"></p>
+                            </div>
+                            <div class="display-2 wow fadeIn typed" data-wow-delay="0.1s"></div>
+                          </div>
                           <a class="popup-youtube"  href="http://www.youtube.com/watch?v=0O2aH4XLbto"><span class="icon ion-ios-play"></span>Watch video </a>
                         </div>
                       </div>
@@ -141,7 +151,7 @@
                         <div class="col-specialization col-md-6 col-lg-4">
                           <span class="icon-specialization icon-laptop-phone"></span>
                           <h4 class="text-uppercase">Mobile Design</h4>
-                          <p>Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage investment through.</p>
+                          <p id="mobile-design"></p>
                         </div>
                         <div class="col-specialization col-md-6 col-lg-4">
                           <span class="icon-specialization icon-smartphone-embed"></span>
@@ -564,6 +574,7 @@
   </div>
 <!-- jQuery -->
 
+<script type="module" src="js/i18n.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/smoothscroll.js"></script>
@@ -572,6 +583,8 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
+<script type="module" src="js/typed.js"></script>
+<script src="js/typed-custom.js"></script>
 
 <!-- Scripts -->
 <script src="js/scripts.js"></script> 
