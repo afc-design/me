@@ -1,0 +1,57 @@
+<header class="navbar navbar-fullpage boxed">
+  <div class="navbar-bg"></div>
+  <a class="brand" href="#">
+    <img class="brand-img" src="images/brand.svg">
+    <div class="brand-info">
+      <div class="brand-name">Andrea Feliz</div>
+      <div class="brand-text">Communication and Design</div>
+    </div>
+  </a>
+
+  <div class="d-md-block">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+      <span class="icon-menu"></span>
+    </button>
+    <div id="language" class="language"></div>
+  </div>
+
+  <div class="contacts d-none d-md-block">
+    <div class="contact-item">
+      +34 669 01 02 55
+    </div>
+    <div class="contact-item spacer">
+      /
+    </div>
+    <div class="contact-item">
+      <a href="mailto:contact@Ramsay.com">andorea.contact@gmail.com</a>
+    </div>
+  </div>
+</header>
+<script>
+  // Set language string from localStorage
+  var language_code = localStorage.getItem('language_code');
+  if (language_code == null) {
+    language_code = 'EN';
+    localStorage.setItem('language_code', 'EN');
+  }
+  $('#language').text(language_code);
+
+  $('.navbar-toggle').on('click',function(){
+    $('body').removeClass('menu-is-closed').addClass('menu-is-opened');
+  });
+  // Toggle language EN/ES when clicked
+  $language_elem = $('#language');
+  $language_elem.on('click', function(){
+    if ($language_elem.text() == 'ES') {
+      $language_elem.text('EN');
+      localStorage.setItem('language_code', 'EN');
+      console.log('EN');
+    } else {
+      $language_elem.text('ES');
+      localStorage.setItem('language_code', 'ES');
+      console.log('ES');
+    }
+    localStorage.removeItem('i18n');
+    location.reload();
+  });
+</script>

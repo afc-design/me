@@ -29,73 +29,11 @@
     <div class="click-capture"></div>
 
     <!-- Sidebar Menu-->
+    <div id="sidebar-menu"></div>
 
-    <div class="menu"> 
-      <span class="close-menu icon-cross2 right-boxed"></span>
-      <ul class="menu-list right-boxed">
-        <li  data-menuanchor="page1">
-          <a  href="#page1">Home</a>
-        </li>
-        <li  data-menuanchor="page2">
-          <a href="#page2">Specialization</a>
-        </li>
-        <li  data-menuanchor="page3">
-          <a href="#page3">Resume</a>
-        </li>
-        <li  data-menuanchor="page4">
-          <a href="#page4">About</a>
-        </li>
-        <li  data-menuanchor="page5">
-          <a href="#page5">Projects</a>
-        </li>
-        <li  data-menuanchor="page7">
-          <a href="#page7">Testimonials</a>
-        </li>
-        <li  data-menuanchor="page8">
-          <a href="#page8">Contact</a>
-        </li>
-      </ul>
-      <div class="menu-footer right-boxed">
-        <div class="social-list">
-          <a href="" class="icon ion-social-twitter"></a>
-          <a href="" class="icon ion-social-facebook"></a>
-          <a href="" class="icon ion-social-googleplus"></a>
-          <a href="" class="icon ion-social-linkedin"></a>
-          <a href="" class="icon ion-social-dribbble-outline"></a>
-        </div>
-        <div class="copy">© Andrea Feliz 2023. All Rights Reseverd</div>
-      </div>
-    </div>
+    <!-- Header navbar -->
+    <div id="header-navbar"></div>
 
-    <!-- Navbar -->
-
-    <header class="navbar navbar-fullpage boxed">
-      <div class="navbar-bg"></div>
-      <a class="brand" href="#">
-        <img alt="" src="images/brand.svg">
-        <div class="brand-info">
-          <div class="brand-name">Andrea Feliz</div>
-        </div>
-      </a>
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <div class="contacts d-none d-md-block">
-        <div class="contact-item">
-          +34 669 01 02 55
-        </div>
-        <div class="contact-item spacer">
-          /
-        </div>
-        <div class="contact-item">
-          <a href="mailto:contact@Ramsay.com">andorea.contact@gmail.com</a>
-        </div>
-      </div>
-    </header>
     <div class="copy-bottom white boxed">© Andrea Feliz 2023.</div>
     <div class="social-list social-list-bottom boxed">
         <a href="" class="icon ion-social-twitter"></a>
@@ -117,12 +55,12 @@
                       <div class="row">
                         <div class="col-md-8 col-lg-6">
                           <h1 class="display-2 text-white wow fadeIn" data-wow-delay="0.1s">
-                            <span id="greeting-0" class="text-primary"></span> Andrea<span class="text-primary">, <span id="greeting-1"></span></span></h1>
+                            <span data-i18n="greeting-0" class="text-primary"></span> Andrea<span class="text-primary">, <span data-i18n="greeting-1"></span></span></h1>
                           <div class="h1_big">
                             <div class="display-2 wow fadeIn typed-strings" data-wow-delay="0.1s">
-                              <p id="designer"></p>
-                              <p id="communicator"></p>
-                              <p id="photographer"></p>
+                              <p data-i18n="designer"></p>
+                              <p data-i18n="communicator"></p>
+                              <p data-i18n="photographer"></p>
                             </div>
                             <div class="display-2 wow fadeIn typed" data-wow-delay="0.1s"></div>
                           </div>
@@ -149,19 +87,19 @@
                       <h2 class="title mb-5 pb-5"> <span class="text-primary">My</span> specialization</h2>
                       <div class="row-specialization row">
                         <div class="col-specialization col-md-6 col-lg-4">
+                          <span class="icon-specialization icon-magic-wand"></span>
+                          <h4 data-i18n="brand-design-title"class="text-uppercase"></h4>
+                          <p data-i18n="brand-design-text"></p>
+                        </div>
+                        <div class="col-specialization col-md-6 col-lg-4">
+                          <span class="icon-specialization icon-shutter"></span>
+                          <h4 data-i18n="content-creation-title" class="text-uppercase"></h4>
+                          <p data-i18n="content-creation-text"></p>
+                        </div>
+                        <div class="col-specialization col-md-6 col-lg-4">
                           <span class="icon-specialization icon-laptop-phone"></span>
-                          <h4 class="text-uppercase">Mobile Design</h4>
-                          <p id="mobile-design"></p>
-                        </div>
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <span class="icon-specialization icon-smartphone-embed"></span>
-                          <h4 class="text-uppercase">Coding</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum fuga dicta voluptatum hic aut aspernatur magnam voluptates itaque atque quae laudantium, tempora at.</p>
-                        </div>
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <span class="icon-specialization icon-diamond2"></span>
-                          <h4 class="text-uppercase">Illustration</h4>
-                          <p>Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage investment through.</p>
+                          <h4 data-i18n="social-media-marketing-title" class="text-uppercase"></h4>
+                          <p data-i18n="social-media-marketing-text"></p>
                         </div>
                       </div>
                       <div class="view-all">
@@ -574,8 +512,44 @@
   </div>
 <!-- jQuery -->
 
-<script type="module" src="js/i18n.js"></script>
+
+
 <script src="js/jquery.min.js"></script>
+
+<!-- Components -->
+<script type="module">
+$("#sidebar-menu").load("components/sidebar_menu.html");
+$("#header-navbar").load("components/header_navbar.html");
+
+import { i18n_strings } from './js/i18n_strings.js';
+
+var language_code = localStorage.getItem('language_code');
+if (language_code === undefined || language_code === null) {
+  language_code = 'EN';
+}
+
+var i18n = i18n_strings[language_code];
+localStorage.setItem('i18n', JSON.stringify(i18n));
+localStorage.setItem('language_code', language_code);
+
+var language_code = localStorage.getItem('language_code');
+console.log('index language code', language_code);
+var i18n = JSON.parse(localStorage.getItem('i18n'));
+console.log('index strings', i18n);
+// get all elements with data-i18n attribute
+var elements = document.querySelectorAll('[data-i18n]');
+console.log(elements);
+for (var i = 0; i < elements.length; i++) {
+  var element = elements[i];
+  var key = element.getAttribute('data-i18n');
+  var value = i18n[key];
+  if (value) {
+    element.innerHTML = value;
+  }
+}
+</script>
+
+
 <script src="js/wow.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/animsition.js"></script>
@@ -583,10 +557,13 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
+<!-- https://stackoverflow.com/questions/8996852/load-and-execute-order-of-scripts -->
 <script type="module" src="js/typed.js"></script>
-<script src="js/typed-custom.js"></script>
+<script type="module" src="js/typed-custom.js"></script>
 
 <!-- Scripts -->
 <script src="js/scripts.js"></script> 
+
+
 </body>
 </html>

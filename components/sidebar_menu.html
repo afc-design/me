@@ -1,0 +1,77 @@
+<div class="menu"> 
+  <span class="close-menu icon-cross2 right-boxed"></span>
+  <ul class="menu-list right-boxed">
+    <li  data-menuanchor="page1">
+      <a data-i18n="home-menu" href="index.html#page1"></a>
+    </li>
+    <li  data-menuanchor="page2">
+      <a data-i18n="specialization-menu" href="index.html#page2"></a>
+    </li>
+    <li  data-menuanchor="page3">
+      <a data-i18n="resume-menu" href="index.html#page3"></a>
+    </li>
+    <li  data-menuanchor="page4">
+      <a data-i18n="about-menu" href="index.html#page4"></a>
+    </li>
+    <li  data-menuanchor="page5">
+      <a data-i18n="projects-menu" href="index.html#page5"></a>
+    </li>
+    <li  data-menuanchor="page7">
+      <a data-i18n="testimonials-menu" href="index.html#page7"></a>
+    </li>
+    <li  data-menuanchor="page8">
+      <a data-i18n="contact-menu" href="index.html#page8"></a>
+    </li>
+  </ul> 
+  <div class="menu-footer right-boxed">
+    <div id="download-resume-menu" data-i18n="download-resume-menu" class="copy menu-resume"></div>
+    <div class="social-list">
+      <a href="" class="icon ion-social-twitter"></a>
+      <a href="" class="icon ion-social-facebook"></a>
+      <a href="" class="icon ion-social-googleplus"></a>
+      <a href="" class="icon ion-social-linkedin"></a>
+      <a href="" class="icon ion-social-dribbble-outline"></a>
+    </div>
+    <!-- <div class="copy">© Andrea Feliz 2023. All Rights Reseverd</div> -->
+  </div>
+</div>
+<script>
+  var i18n_strings = [
+    "home-menu",
+    "specialization-menu",
+    "contact-menu",
+    "resume-menu",
+    "about-menu",
+    "projects-menu",
+    "testimonials-menu",
+    "download-resume-menu"
+  ]
+  var i18n = JSON.parse(localStorage.getItem('i18n'));
+  for (var i = 0; i < i18n_strings.length; i++) {
+    // get all elements with that string as value of data-i18n
+    var elements = document.querySelectorAll('[data-i18n="' + i18n_strings[i] + '"]');
+    for (var j = 0; j < elements.length; j++) {
+      // set the text of the element to the value of the string in the i18n object
+      elements[j].innerHTML = i18n[i18n_strings[i]];
+    }
+  }
+  
+  $('.close-menu, .click-capture, .menu-list li a').on('click', function(){
+    $('body').removeClass('menu-is-opened').addClass('menu-is-closed');
+    $('.menu-list ul').slideUp(300);
+  });
+
+  $('.menu-list li a').on('click', function(){
+    $('.menu-list li').removeClass('active');
+    $(this).closest('li').addClass('active');
+
+  });
+
+  $('.col-resume').on('mouseover',function(){
+    $('.section-bg.mask').addClass('hide');
+  });
+
+  $('.col-resume').on('mouseleave', function () {
+    $('.section-bg.mask').removeClass('hide');
+  });
+</script>
