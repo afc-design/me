@@ -633,7 +633,7 @@ a.brand:focus{
 .language{
   float: right;
   font-size: 1.8rem;
-  margin-right: 1rem;
+  margin-right: 1.8rem;
   display: inline-block;
   cursor: pointer;
 }
