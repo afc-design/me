@@ -32,7 +32,16 @@
     language_code = 'EN';
     localStorage.setItem('language_code', 'EN');
   }
-  $('#language').text(language_code);
+
+  // Invert language code
+  var display_language_code = '';
+  if (language_code == 'EN') {
+    display_language_code = 'ES';
+  } else if (language_code == 'ES') {
+    display_language_code = 'EN';
+  }
+
+  $('#language').text(display_language_code);
 
   var i18n_strings = [
     "phone-number-num",
@@ -55,11 +64,11 @@
   $language_elem.on('click', function(){
     if ($language_elem.text() == 'ES') {
       $language_elem.text('EN');
-      localStorage.setItem('language_code', 'EN');
+      localStorage.setItem('language_code', 'ES');
       console.log('EN');
     } else {
       $language_elem.text('ES');
-      localStorage.setItem('language_code', 'ES');
+      localStorage.setItem('language_code', 'EN');
       console.log('ES');
     }
     localStorage.removeItem('i18n');
