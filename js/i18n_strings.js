@@ -20,6 +20,7 @@ export var i18n_strings = {
     'contact-menu': 'Contacto',
     'testimonials-menu': 'Testimonios',
     'home-menu': 'Inicio',
+    'phone-number-num': '+34 669 01 02 55', 
   },
   'EN': {
     'greeting-0': 'Hi, I\'m',
@@ -42,5 +43,6 @@ export var i18n_strings = {
     'contact-menu': 'Contact',
     'testimonials-menu': 'Testimonials',
     'home-menu': 'Home',
+    'phone-number-num': '+43 660 9554458',
   }
 }

@@ -1,6 +1,6 @@
 <header class="navbar navbar-fullpage boxed">
   <div class="navbar-bg"></div>
-  <a class="brand" href="#">
+  <a class="brand" href="index.html#page1">
     <img class="brand-img" src="images/brand.svg">
     <div class="brand-info">
       <div class="brand-name">Andrea Feliz</div>
@@ -16,9 +16,7 @@
   </div>
 
   <div class="contacts d-none d-md-block">
-    <div class="contact-item">
-      +34 669 01 02 55
-    </div>
+    <div data-i18n="phone-number-num" class="contact-item"></div>
     <div class="contact-item spacer">
       /
     </div>
@@ -35,6 +33,19 @@
     localStorage.setItem('language_code', 'EN');
   }
   $('#language').text(language_code);
+
+  var i18n_strings = [
+    "phone-number-num",
+  ]
+  var i18n = JSON.parse(localStorage.getItem('i18n'));
+  for (var i = 0; i < i18n_strings.length; i++) {
+    // get all elements with that string as value of data-i18n
+    var elements = document.querySelectorAll('[data-i18n="' + i18n_strings[i] + '"]');
+    for (var j = 0; j < elements.length; j++) {
+      // set the text of the element to the value of the string in the i18n object
+      elements[j].innerHTML = i18n[i18n_strings[i]];
+    }
+  }
 
   $('.navbar-toggle').on('click',function(){
     $('body').removeClass('menu-is-closed').addClass('menu-is-opened');
