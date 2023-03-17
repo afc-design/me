@@ -1,13 +1,17 @@
 .typed-strings p {
-    position: absolute;
+  position: absolute;
 }
-.typed,.typed-strings{display:inline-block;}
-.typed-strings p{position:absolute;}
+.typed,.typed-strings{
+  display: inline-block;
+}
+.typed-strings p {
+  position: absolute;
+}
 .typed-cursor{
-opacity: 1;
--webkit-animation: blink 0.7s infinite;
--moz-animation: blink 0.7s infinite;
-animation: blink 0.7s infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 h1.big,
 .h1_big {
@@ -15,6 +19,6 @@ h1.big,
   font-size: 4.7rem;
   font-weight: 600;
   margin: 0;
-  line-height: 65px;
+  line-height: 66px;
 	letter-spacing:-2px;
 }
