@@ -21,6 +21,8 @@ export var i18n_strings = {
     'testimonials-menu': 'Testimonios',
     'home-menu': 'Inicio',
     'phone-number-num': '+34 669 01 02 55', 
+    'city-name': 'Viena',
+    'brand-text': 'Comunicación y diseño',
   },
   'EN': {
     'greeting-0': 'Hi, I\'m',
@@ -44,5 +46,7 @@ export var i18n_strings = {
     'testimonials-menu': 'Testimonials',
     'home-menu': 'Home',
     'phone-number-num': '+43 660 9554458',
+    'city-name': 'Vienna',
+    'brand-text': 'Communication and Design',
   }
 }
