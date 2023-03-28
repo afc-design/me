@@ -64,7 +64,11 @@
                             </div>
                             <div class="display-2 wow fadeIn typed" data-wow-delay="0.1s"></div>
                           </div>
-                          <a class="popup-youtube"  href="http://www.youtube.com/watch?v=0O2aH4XLbto"><span class="icon ion-ios-play"></span>Watch video </a>
+                          <a class="popup-youtube"  href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+                            <span class="icon ion-ios-play"></span>
+                            <!-- Unset all styles to avoid div styling. -->
+                            <div style="all: unset" data-i18n="watch-video"></div>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -78,13 +82,18 @@
       <div data-anchor="page2" class="pp-scrollable section section-2">
         <div class="scroll-wrap">
           <div class="scrollable-content">
-            <div class="vertical-title text-white  d-none d-lg-block"><span>what I do</span></div>
+            <div class="vertical-title text-white  d-none d-lg-block">
+              <span data-i18n="what-i-do"></span>
+            </div>
             <div class="vertical-centred">
               <div class="boxed boxed-inner">
                 <div class="boxed">
                   <div class="container">
                     <div class="intro">
-                      <h2 class="title mb-5 pb-5"> <span class="text-primary">My</span> specialization</h2>
+                      <h2 class="title mb-5 pb-5">
+                        <span data-i18n="my" class="text-primary"></span>
+                        <span data-i18n="specialization"></span>
+                      </h2>
                       <div class="row-specialization row">
                         <div class="col-specialization col-md-6 col-lg-4">
                           <span class="icon-specialization icon-magic-wand"></span>
@@ -103,9 +112,7 @@
                         </div>
                       </div>
                       <div class="view-all">
-                        <a href="#">
-                          Download resume
-                        </a>
+                        <a data-i18n="download-resume-menu" href="#"></a>
                       </div>
                     </div>
                   </div>
@@ -115,65 +122,7 @@
           </div>
         </div>
       </div>
-      <div data-anchor="page3" class="pp-scrollable text-white section section-3">
-        <div class="scroll-wrap">
-          <div class="section-bg mask" style="background-image:url(images/bg/resume.jpg);"></div>
-          <div class="scrollable-content">
-            <div class="vertical-title d-none d-lg-block"><span>resume</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="row row-resume">
-                        <div class="col-md-6 fadeY fadeY-1">
-                          <h2 class="resume-header title">Education</h2>
-                          <div class="col-resume">
-                            <div class="resume-content">
-                              <div class="resume-inner">
-                                <div class="resume-row">
-                                  <h6 class="resume-type">Specialization course</h6>
-                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
-                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
-                                </div>
-                                <div class="resume-row">
-                                  <h6 class="resume-type">Academy course</h6>
-                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
-                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
-                          <h2 class="resume-header title">Experience</h2>
-                          <div class="col-resume">
-                            <div class="resume-content">
-                              <div class="resume-inner">
-                                <div class="resume-row">
-                                  <h6 class="resume-type">WEBDESIGNER & FRONT-END</h6>
-                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
-                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
-                                </div>
-                                <div class="resume-row">
-                                  <h6 class="resume-type">WORDPRESS DEVELOPER</h6>
-                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
-                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page4" class="pp-scrollable section section-4">
+      <div data-anchor="page3" class="pp-scrollable section section-3">
         <div class="scroll-wrap">
           <div class="section-bg bg-about" style="background-image:url(images/bg/about.jpg);"></div>
           <div class="scrollable-content">
@@ -193,7 +142,10 @@
                           </div>
                         </div>
                         <div class="col-lg-5 mt-5 mt-xl-0">
-                          <h2 class="title"> <span class="text-primary">The best</span> websites</h2>
+                          <h2 class="title">
+                            <span class="text-primary"></span>
+                            <span data-i18n="experience"></span>
+                          </h2>
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta sit pariatur odio unde deleniti eveniet.
                           <div class="progress-bars">
                             <div class="clearfix">
@@ -226,6 +178,64 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page4" class="pp-scrollable text-white section section-4">
+        <div class="scroll-wrap">
+          <div class="section-bg mask" style="background-image:url(images/bg/resume.jpg);"></div>
+          <div class="scrollable-content">
+            <div class="vertical-title d-none d-lg-block"><span data-i18n="resume-no-cap"></span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row row-resume">
+                        <div class="col-md-6 fadeY fadeY-1 resume-element">
+                          <h2 class="resume-header title">Experience</h2>
+                          <div class="col-resume">
+                            <div class="resume-content">
+                              <div class="resume-inner">
+                                <div class="resume-row">
+                                  <h6 class="resume-type">Specialization course</h6>
+                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
+                                </div>
+                                <div class="resume-row">
+                                  <h6 class="resume-type">Academy course</h6>
+                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 fadeY fadeY-2 resume-element">
+                          <h2 class="resume-header title">Education</h2>
+                          <div class="col-resume">
+                            <div class="resume-content">
+                              <div class="resume-inner">
+                                <div class="resume-row">
+                                  <h6 class="resume-type">WEBDESIGNER & FRONT-END</h6>
+                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
+                                </div>
+                                <div class="resume-row">
+                                  <h6 class="resume-type">WORDPRESS DEVELOPER</h6>
+                                  <i class="resume-study">University of studies, Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                  <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
                     </div>
                   </div>
                 </div>

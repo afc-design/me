@@ -621,6 +621,7 @@ a.brand:focus{
   font-weight: 800;
   font-size: 1.714rem;
   line-height: 1;
+  margin-top: 0.5rem;
 }
 
 .brand-text{
@@ -728,7 +729,7 @@ a.brand:focus{
 .contacts{
   float: left;
   margin-left: 9rem;
-  margin-top:0.5rem;
+  margin-top:0.8rem;
 }
 
 .contacts .contact-item{
@@ -1357,10 +1358,10 @@ a.brand:focus{
 }
 
 .resume-header{
-  position:relative;
+  position: relative;
   z-index: 2;
-  top:5rem;
-  padding:0 3.6rem;
+  top: 1rem;
+  padding: 0 3.6rem;
   transition: all 0.5s;
 }
 
@@ -1381,8 +1382,9 @@ a.brand:focus{
 .col-resume{
   position:relative;
   top:0;
-  padding:2.2rem 3.6rem 3.6rem;
-  background: rgba(255,255,255,0.1);
+  padding: 2.2rem 3.6rem 3.6rem;
+  margin-top: -3.8rem;
+  background: rgba(0,0,0,0.4);
   transition:background 0.5s, top 0.5s;
 }
 
