@@ -80,6 +80,7 @@ body{
   color: #717171;
   background: #1b1b1b;
   -webkit-overflow-scrolling:touch;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar{
