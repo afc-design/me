@@ -71,6 +71,7 @@ html{
 }
 
 body{
+  /* cursor: url('/images/UntitledPointer.svg'), auto; */
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -2200,6 +2201,20 @@ a.brand:focus{
   
 }
 
+/* -----------------------------  Kinet  ------------------------------------ */
 
-
+.circle {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to top left, #8661c1, #be97ce);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 10;
+  transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
+}
 
