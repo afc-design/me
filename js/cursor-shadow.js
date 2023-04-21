@@ -28,28 +28,3 @@ kinet.on('start', function() {
 kinet.on('end', function() {
   console.log('end');
 });
-
-function grow() {
-  $('#circle').css('background', 'linear-gradient(to top left, #ccc, #efbcd5)');
-  $('#circle').css('height', '60px');
-  $('#circle').css('width', '60px');
-  $('#circle').css('margin', '-30px 0 0 -30px');
-}
-
-function shrink() {
-  // on mouseout, reset the background colour
-  $('#circle').css('background', 'linear-gradient(to top left, #8661c1, #be97c6)');
-  $('#circle').css('height', '30px');
-  $('#circle').css('width', '30px');
-  $('#circle').css('margin', '-15px 0 0 -15px');
-}
-
-// TODO: add the same effect for more buttons
-// In order to work for the navbar, you have to add this code to the component
-// javascript file. See how to do it avoiding code duplication. Do it also for
-// the i18n, that it is also duplicated at the moment.
-// TODO: deactivate it for mobile devices.
-$(function() {
-  $('.popup-youtube').hover(grow, shrink);
-  $('.language').hover(grow, shrink);  // TODO: not working yet.
-});
