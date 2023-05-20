@@ -399,7 +399,7 @@ label.error{
   border-radius: 50%;
   font-size: 1.5rem;
   margin-right:1.5rem;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   color: #fff;
   transition: all .3s ease-out;
 }
