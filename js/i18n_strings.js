@@ -20,7 +20,7 @@ export var i18n_strings = {
     'contact-menu': 'Contacto',
     'testimonials-menu': 'Testimonios',
     'home-menu': 'Inicio',
-    'phone-number-num': '+34 669 01 02 55', 
+    'phone-number-num': '+34 669 01 02 55',
     'city-name': 'Viena',
     'brand-text': 'Comunicación y diseño',
     'watch-video': 'Ver vídeo',
@@ -28,7 +28,10 @@ export var i18n_strings = {
     'my': 'Mi',
     'specialization': 'especialización',
     'resume-no-cap': 'currículum',
-    'experience': 'Experiencia',
+    'experience': 'en el mercado',
+    'Experience': 'Experiencia',
+    'of working': 'de experiencia',
+    'years': 'años',
   },
   'EN': {
     'greeting-0': 'Hi, I\'m',
@@ -59,6 +62,9 @@ export var i18n_strings = {
     'my': 'My',
     'specialization': 'specialization',
     'resume-no-cap': 'résumé',
-    'experience': 'Experience',
+    'experience': 'experience',
+    'Experience': 'Experience',
+    'of working': 'of working',
+    'years': 'years',
   }
 }
