@@ -838,9 +838,9 @@ a.brand:focus{
   -ms-transform: translateY(3rem);
   -o-transform: translateY(3rem);
   transform: translateY(3rem);
-  -webkit-transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
-  -o-transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
-  transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
+  -webkit-transition: transform 0.2s 0.3s ease, opacity 0.2s 0.3s ease;
+  -o-transition: transform 0.2s 0.3s ease, opacity 0.2s 0.3s ease;
+  transition: transform 0.2s 0.3s ease, opacity 0.2s 0.3s ease;
 }
 
 .menu-list li a{
@@ -895,9 +895,9 @@ a.brand:focus{
   -ms-transform: translateY(3rem);
   -o-transform: translateY(3rem);
   transform: translateY(3rem);
-  -webkit-transition: all 0.5s 0.7s ease;
-  -o-transition: all 0.5s 0.7s ease;
-  transition: all 0.5s 0.7s ease;
+  -webkit-transition: all 0.2s 0.4s ease;
+  -o-transition: all 0.2s 0.4s ease;
+  transition: all 0.2s 0.4s ease;
 }
 
 .menu-footer .social-list a{
@@ -924,9 +924,9 @@ a.brand:focus{
   -ms-transform: translateY(2rem);
   -o-transform: translateY(2rem);
   transform: translateY(2rem);
-  -webkit-transition: all 0.5s 0.9s ease;
-  -o-transition: all 0.5s 0.9s ease;
-  transition: all 0.5s 0.9s ease;
+  -webkit-transition: all 0.2s 0.4s ease;
+  -o-transition: all 0.2s 0.4s ease;
+  transition: all 0.2s 0.4s ease;
 }
 
 .menu-resume{
@@ -963,7 +963,7 @@ a.brand:focus{
 .menu-resume:hover:before {
   background: #fff;
   width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
 
 .menu-resume:hover:after {
@@ -1317,6 +1317,12 @@ a.brand:focus{
   line-height: 1;
   letter-spacing: -0.05em;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .display-2{
+    font-size: 4.7rem;
+  }
 }
 
 
@@ -2211,17 +2217,19 @@ a.brand:focus{
 /* Enable only for desktop using media */
 @media (min-width: 768px) {
   .circle {
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(to top left, #8661c1, #be97ce);
+    width: 50px;
+    height: 50px;
+    border: 4px solid; /* Transparent border */
+    border-color: #dcdfe3;
+    background: transparent;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -15px 0 0 -15px;
+    margin: -25px 0 0 -25px;
     pointer-events: none;
     mix-blend-mode: multiply;
-    z-index: 10;
+    z-index: 10000;  /* Make sure this is above all other elements */
     transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
   }
 }

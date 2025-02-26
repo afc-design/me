@@ -1,6 +1,6 @@
 // create instance of kinet with custom settings
 var kinet = new Kinet({
-  acceleration: 0.06,
+  acceleration: 0.1,
   friction: 0.20,
   names: ["x", "y"],
 });
