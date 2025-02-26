@@ -1,6 +1,6 @@
 export var i18n_strings = {
   'ES': {
-    'greeting-0': 'Hola, me llamo',
+    'greeting-0': 'Hola, soy',
     'greeting-1': 'soy',
     'designer': 'Diseñadora',
     'communicator': 'Comunicadora',

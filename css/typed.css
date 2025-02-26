@@ -16,9 +16,9 @@
 h1.big,
 .h1_big {
   font-family: 'Lato', sans-serif;
-  font-size: 4.7rem;
+  font-size: 4.0rem;
   font-weight: 600;
   margin: 0;
   line-height: 66px;
-	letter-spacing:-2px;
+  letter-spacing:-2px;
 }
