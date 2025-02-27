@@ -12,15 +12,38 @@
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
+  font-size: 3.0rem;
 }
+
+
+@media (min-width: 480px) {
+  .typed-cursor{
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .typed-cursor{
+    font-size: 4.7rem;
+  }
+}
+
+
 h1.big,
 .h1_big {
   font-family: 'Lato', sans-serif;
-  font-size: 4.7rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 0;
   line-height: 66px;
   letter-spacing:-2px;
+}
+
+@media (min-width: 480px) {
+  h1.big,
+  .h1_big {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -29,4 +52,5 @@ h1.big,
     font-size: 4.7rem;
   }
 }
+
 

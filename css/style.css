@@ -1312,11 +1312,17 @@ a.brand:focus{
 }
 
 .display-2{
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.05em;
   margin: 0;
+}
+
+@media (min-width: 480px) {
+  .display-2{
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 768px) {
